@@ -3,7 +3,7 @@
 
 //Note: There is a very important thing to note is: the service side of aidl files and aidl file on the client to be consistent, and the package name must be the same.
 
-01. First generation aidl file, as follows:
+one: First generation aidl file, as follows:
 // IMyAidlInterface.aidl
 package com.example.prx.aidldemo;
 
@@ -15,7 +15,7 @@ interface IMyAidlInterface {
 }
 
 
-02. Then edit the server-side code:
+tow:Then edit the server-side code:
 
 
 /**
@@ -41,7 +41,7 @@ public class IRemoteService extends Service{
 }
 
 
-03. Last edited client code:
+three: Last edited client code:
 
 
 public class MainActivity extends AppCompatActivity
