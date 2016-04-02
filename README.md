@@ -14,15 +14,9 @@ interface IMyAidlInterface {
     int add(int num1 ,int num2);
 }
 
+
 2. Then edit the server-side code:
 
-package com.example.prx.aidldemo;
-
-import android.app.Service;
-import android.content.Intent;
-import android.os.IBinder;
-import android.os.RemoteException;
-import android.util.Log;
 
 /**
  * Created by Administrator on 2016/4/1.
@@ -49,24 +43,9 @@ public class IRemoteService extends Service{
 
 3. Last edited client code:
 
-package com.example.prx.aidlclient;
 
-import android.content.ComponentName;
-import android.content.Context;
-import android.content.Intent;
-import android.content.ServiceConnection;
-import android.os.IBinder;
-import android.os.RemoteException;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-
-import com.example.prx.aidldemo.IMyAidlInterface;
-
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity
+			  implements View.OnClickListener {
 
     private EditText etNum1,etNum2,etSum;
     private Button btnSum;
@@ -142,6 +121,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 }
 
-最后是效果图：
+
 
 
